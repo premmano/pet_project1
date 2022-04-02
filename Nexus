@@ -1,1 +1,19 @@
-
+Prerequisites:
+ Minimum 3gm RAM machine need.
+ Java need.
+ 
+ Create EC2 server.
+ yum install java-1.8.0
+ cd /opt/
+ wget https://download.sonatype.com/nexus/3/nexus-3.38.1-01-unix.tar.gz
+ tar -xvf nexus-3.38.1-01-unix.tar.gz
+ cd nexus-3.38.1-01
+ cd /bin
+ ./nexus start
+ ./nexus status
+ Check: IP address of nexus server:8081 
+ 8081 - Nexus console port number.
+ Go to nexus page and give username.
+ Password get from /opt/sonatype-work/nexus3/admin.password
+ cat /opt/sonatype-work/nexus3/admin.password
+ 
