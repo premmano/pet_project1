@@ -1,1 +1,7 @@
-
+Preequisites:
+ 3 gb ram machine]
+ java open-jdk
+ Data base server(RDS - Mysql)
+ Local srver & Remote server install and acess in DB server.
+ SonarQube should not start with root user.
+ 
