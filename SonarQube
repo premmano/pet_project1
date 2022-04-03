@@ -5,3 +5,32 @@ Preequisites:
  Local srver & Remote server install and acess in DB server.
  SonarQube should not start with root user.
  
+ # Create RDS server
+ create mysql db and choose mysql db engine version --> 5.7.26
+ give credentials of mysql db.
+ 
+ # create ec2 server eith minimum 3gb ram
+ 
+ # java installation
+  yum install java-1.8.0
+  Sonarqube package install under opt directory
+  cd /opt/
+  wget  https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.6.zip 
+  unzip sonarqube-6.7.6
+  yum install mysql -y
+  mysql -h endpoint of rds -P 3306 -u username of rds -P 
+  
+  # Creation of local user and remote user and acess:
+  cd /opt/
+  CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+  
+  CREATE USER sonar@localhost IDENTIFIED BY 'sonar';
+  
+  CREATE USER sonar@'%' IDENTIFIED BY 'sonar';
+  
+  
+  GRANT ALL ON sonar.* TO sonar@localhost;
+  
+  GRANT ALL ON sonar.* TO sonar@'%';
+
+ 
