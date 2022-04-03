@@ -32,5 +32,33 @@ Preequisites:
   GRANT ALL ON sonar.* TO sonar@localhost;
   
   GRANT ALL ON sonar.* TO sonar@'%';
+  
+File Name: /opt/sonarqube-6.7.6/conf/sonar.properties
+sonar.jdbc.username=admin
+sonar.jdbc.password=admin123
+sonar.jdbc.url=jdbc:mysql://<RDS_DATABAE_ENDPOINT>:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
+sonar.web.host=0.0.0.0
+sonar.web.context=/sonar
+
+ File Name: /opt/sonarqube-6.7.6/conf/wrapper.conf
+ wrapper java  command=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.312.607-1.amazn2.0.2x86-64/jre/bin/java
+ 
+# start of sonarqube
+ chown -R ec2-user:ec2-user sonarqube-6.7.6
+ cd /opt/sonarqube-6.7.6/bin/linux-x86-64
+ ./sonar.sh start
+ ./sonar.sh status
+ 
+ # Sonarqube console login:
+ sonarqube server ip:9000/sonar to enter the sonarqube console
+ 
+#Integrate jenkins and sonarqube:
+
+
+ 
+ 
+ 
+ 
+
 
  
