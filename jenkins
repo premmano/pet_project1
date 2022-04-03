@@ -1,1 +1,16 @@
-
+amazon-linux-extras install epel -y
+yum update -y
+wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+amazon-linux-extras install java-openjdk11
+yum install jenkins -y
+systemctl start jenkins
+systemctl status jenkins
+check: jenkins server ip:8080
+open jenkins page :
+  user name: admin
+  password: admin123
+  cnform password: admin123
+  full name: prem
+  E-mail: premmano93@gmail.com
+  
