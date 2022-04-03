@@ -17,3 +17,4 @@ Prerequisites:
  Password get from /opt/sonatype-work/nexus3/admin.password
  cat /opt/sonatype-work/nexus3/admin.password
  
+yum install docker -y
