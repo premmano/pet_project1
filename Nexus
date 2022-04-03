@@ -11,7 +11,7 @@ Prerequisites:
  cd /bin
  ./nexus start
  ./nexus status
- Check: IP address of nexus server:8081 
+ To open nexus server mention IP address of nexus:8081(nexus console port number)
  8081 - Nexus console port number.
  Go to nexus page and give username.
  Password get from /opt/sonatype-work/nexus3/admin.password
