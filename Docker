@@ -1,3 +1,6 @@
 yum install docker -y
 service docker start
 service docker status
+# Docker credentials on jenkins
+Go jenkins console --> configuration --> manage jenkins --> manage credentials --> jenkins --> global credentials(unrestricted) -->add credentials --> secret text
+under secret text have to give docker hub password and ID
