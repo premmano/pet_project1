@@ -14,3 +14,7 @@ open jenkins page :
   full name: prem
   E-mail: premmano93@gmail.com
   
+# Integrate jenkins and maven:
+ Integrate jenkins and mave using plugin.
+ mannage jenkins --> manage plugin --> available --> maven integration --> install without restart
+ 
