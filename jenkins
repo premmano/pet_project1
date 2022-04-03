@@ -24,4 +24,11 @@ open jenkins page :
  name: maven3 --> alias name
  maven home: /opt/apache-maven-3.8.5
  
- 
+ # integrate jenkins and sonarqube
+  mannage jenkins --> manage plugin --> available -->Sonarqube scanner --> install without restart
+  manage jenkins --> manage credentials --> jenkins --> global credentials --> add credentials --> secrete text
+  under secrete text mention sonarqube token and id.
+  manage jenkins -->configure sysytem --> sonarqube installations
+  name: sonar
+  server url: sonarqube webpage url
+  server authentication token: sonar token
