@@ -18,3 +18,10 @@ open jenkins page :
  Integrate jenkins and mave using plugin.
  mannage jenkins --> manage plugin --> available --> maven integration --> install without restart
  
+# maven path specify:
+ manage jenkins --> global tool configuration --> maven installation
+ under maven installation have to mention alias name and maven installaton path on server.
+ name: maven3 --> alias name
+ maven home: /opt/apache-maven-3.8.5
+ 
+ 
