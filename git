@@ -11,5 +11,7 @@ git commit -m "project"
 git branch
 git show --oneline
 git show commit id
-git remote add origin 
+git remote add origin https://github.com/premmano/pet_project1.git
+git remote -v
+git push origin master
 
