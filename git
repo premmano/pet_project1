@@ -1,1 +1,15 @@
+create ec2 server.
+yum install git -y
+Using winscp source code copy from local machine to ec2 linux server.
+mkdir project
+cd project
+cp /home/ec2-user/pet_project1 .
+git init
+git status
+git add pet_project1/*
+git commit -m "project"
+git branch
+git show --oneline
+git show commit id
+git remote add origin 
 
