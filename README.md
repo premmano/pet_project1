@@ -16,5 +16,5 @@ step3: Jenkins automatically triggers the source code from github by intergratin
 step4: Maven automatically triggers the source code from jenkins and converts it as a war file by integrating jenkins and maven. 
 step5: Sonarqube automatically triggers the war file of source code for quality testing by integrating jenkins and sonarqube.
 step6: Tomcat install in docker to deploy that war file(java application) on top of it
-step7: war file converted as docker image and container. push to the docker hub
+step7: war file converted as docker image and container and  push to the docker hub
 step8: Docker image push to docker hub and nexus.
