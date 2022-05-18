@@ -18,3 +18,4 @@ step5: Sonarqube automatically triggers the war file of source code for quality 
 step6: Tomcat install in docker to deploy that war file(java application) on top of it
 step7: war file converted as docker image and container and  push to the docker hub
 step8: Docker image push to docker hub and nexus.
+[Devops projects 1.docx](https://github.com/premmano/pet_project1/files/8717665/Devops.projects.1.docx)
