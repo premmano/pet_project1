@@ -19,3 +19,4 @@ step6: Tomcat install in docker to deploy that war file(java application) on top
 step7: war file converted as docker image and container and  push to the docker hub
 step8: Docker image push to docker hub and nexus.
 [Devops projects 1.docx](https://github.com/premmano/pet_project1/files/8717665/Devops.projects.1.docx)
+[Devops projects 1.pdf](https://github.com/premmano/pet_project1/files/8717914/Devops.projects.1.pdf)
